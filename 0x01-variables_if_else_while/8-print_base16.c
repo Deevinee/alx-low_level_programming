@@ -1,0 +1,15 @@
+#include <stdio.h>
+/**
+ * main - print the numbers in base 16
+ * Return: 0
+ */
+int main(void)
+{
+int num;
+char ld;
+for (num = 0; num < 10; num++)
+putchar((num % 10) + '0');
+for (ld = 'a'; ld <= 'f'; ld++)
+putchar(ld);
+putchar('\n')
+return (0);
