@@ -11,5 +11,5 @@ for (num = 0; num < 10; num++)
 putchar((num % 10) + '0');
 for (ld = 'a'; ld <= 'f'; ld++)
 putchar(ld);
-putchar('\n')
+putchar('\n');
 return (0);
