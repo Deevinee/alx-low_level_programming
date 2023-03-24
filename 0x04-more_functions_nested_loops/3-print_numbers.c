@@ -1,15 +1,15 @@
-#include "maim.h"
+#include "main.h"
 
 /**
- * print_numbers - print num from 0 - 9
- * Return: void
+ * print_number - print number from 0-9
+ * return: void
  */
 
 void print_numbers(void)
 {
 	char c;
 
-	for (c = 48; c < 58; c++)
+	for (c = '0'; c <= '9'; c++)
 	{
 		_putchar(c);
 	}
