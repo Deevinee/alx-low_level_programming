@@ -1,25 +1,21 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
- * puts2 - prints every other character of a string
- * @str: the string to be treated
- * Return: void
+ * puts2 - prints one character out of two
+ * @str: input
+ * Return: print
  */
 
 void puts2(char *str)
 {
-	int i;
-	int j = 0;
+	int i = 0;
 
-	while (str[j] != '\0')
+	for (; str[i] != '\0'; i++)
 	{
-		j++;
-	}
-
-	for (i = 0; i < j; i += 2)
-	{
-		_putchar(str[i]);
+		if ((i % 2) == 0)
+			_putchar(str[i]);
+		else
+			continue;
 	}
 	_putchar('\n');
 }
